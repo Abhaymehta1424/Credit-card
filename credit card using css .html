@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDIT CARD</title>
+    <link rel="stylesheet" href="credit.css">
+</head>
+<body >
+    <fieldset>
+<center><h1>CREDIT CARD</h1></center>
+
+
+    <div>
+      <center><pre><input type="radio" name="gender">Visa          <input type="radio" name="gender">Diners </pre></center>
+       <br>
+      <center><script>
+        function calculate() {
+            var Number = document.getElementById("A").value;
+            var Name = document.getElementById("B").value;
+
+            document.getElementById("Number").innerHTML ="Your number :"+Number;
+            document.getElementById("Name").innerHTML ="Your name :"+Name;
+        }
+       </script>
+       <form action="javascript:calculate()"
+method="get" class="background">
+        <label for="A">
+            Number <input id="A" type="text" placeholder="enter your number" required>
+        </label>
+        <br>
+        <br>
+        <label for="B">
+            Name <input id="B" type="text" placeholder="enter your name">
+        </label>
+        <br>
+        <br>
+        <pre><input type="submit">      <input type="reset">   </pre>
+    </script>
+    </center>
+       </form>
+       <br>
+       <h3 id="Number"></h3>
+       <h3 id="Name"></h3>
+       </div>
+    
+</body>
+</html>
